@@ -1,2 +1,2 @@
 # gemini-mattermost-bot
-Mattermost Bot using Gemini API as backend.
+This is a Mattermost Bot that uses Gemini API as its backend.
