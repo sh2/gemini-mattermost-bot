@@ -1,0 +1,4 @@
+.venv/
+.vscode/
+container*.sh
+script*.sh
