@@ -204,8 +204,12 @@ class ChatBot(Plugin):
                         }
                     )
                 else:
-                    requestMessages.append(
-                        {"role": "user", "parts": message})
+                    if requestMessages[-1]["role"] == "user":
+                        # If there are consecutive user posts, add them to parts.
+                        requestMessages[-1]["parts"][0] += "\nMessage: " + message
+                    else:
+                        requestMessages.append(
+                            {"role": "user", "parts": ["Message: " + message]})
 
         return requestMessages
 
