@@ -1,5 +1,4 @@
 import google.generativeai
-import httpx
 import json
 import logging
 import os
