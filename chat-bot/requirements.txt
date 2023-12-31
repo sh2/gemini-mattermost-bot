@@ -35,6 +35,7 @@ protobuf==4.25.1
 pyasn1==0.5.1
 pyasn1-modules==0.3.0
 Pygments==2.17.2
+PySocks==1.7.1
 requests==2.31.0
 rsa==4.9
 schedule==1.2.1
