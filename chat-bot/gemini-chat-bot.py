@@ -116,7 +116,9 @@ class ChatBot(Plugin):
             last_time = time.time()
 
             for chunk in response:
-                reply_chunks.append(chunk.text)
+                for part in chunk.parts:
+                    reply_chunks.append(part.text)
+
                 current_time = time.time()
 
                 # Stores stream data for one second before outputting it.
