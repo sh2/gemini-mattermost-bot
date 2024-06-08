@@ -38,7 +38,7 @@ class ChatBot(Plugin):
         )
 
         self.gemini_model = google.generativeai.GenerativeModel(
-            os.environ.get("GEMINI_MODEL", "gemini-pro")
+            os.environ.get("GEMINI_MODEL") or "gemini-1.5-flash"
         )
 
         # Mattermost

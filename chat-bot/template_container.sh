@@ -10,7 +10,7 @@ podman run \
         --env=MATTERMOST_PORT=8065 \
         --env=MATTERMOST_API_PATH=/api/v4 \
         --env=BOT_TOKEN= \
-        --env=GEMINI_MODEL=gemini-pro \
+        --env=GEMINI_MODEL=gemini-1.5-flash \
         --env=GEMINI_API_KEY= \
         --name=gemini-chat-bot \
         gemini-chat-bot:latest

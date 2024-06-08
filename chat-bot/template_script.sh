@@ -12,7 +12,7 @@ export MATTERMOST_API_PATH=/api/v4
 export BOT_TOKEN=
 
 # Gemini API
-export GEMINI_MODEL=gemini-pro
+export GEMINI_MODEL=gemini-1.5-flash
 export GEMINI_API_KEY=
 
 python3 gemini-chat-bot.py
