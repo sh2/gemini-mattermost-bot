@@ -1,4 +1,5 @@
 # gemini-mattermost-bot
+
 This is a Mattermost Bot that uses Gemini API as its backend.
 
 ## Setup
@@ -8,26 +9,26 @@ The bot's name should begin with "ai-".
 
 The following is the setup procedure for launching Python scripts directly.
 
-```
-$ git clone https://github.com/sh2/gemini-mattermost-bot.git
-$ cd gemini-mattermost-bot/chat-bot
-$ python3 -m venv .venv
-$ source .venv/bin/activate
-$ pip install -r requirements.txt
-$ cp template_script.sh script.sh
-$ vim script.sh
-$ ./script.sh
+```bash
+git clone https://github.com/sh2/gemini-mattermost-bot.git
+cd gemini-mattermost-bot/chat-bot
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp template_script.sh script.sh
+vim script.sh
+./script.sh
 ```
 
 The following is the setup instructions for building a Podman/Docker container.
 
-```
-$ git clone https://github.com/sh2/gemini-mattermost-bot.git
-$ cd gemini-mattermost-bot/chat-bot
-$ podman build -t gemini-chat-bot .
-$ cp template_container.sh container.sh
-$ vim container.sh
-$ ./container.sh
+```bash
+git clone https://github.com/sh2/gemini-mattermost-bot.git
+cd gemini-mattermost-bot/chat-bot
+podman build -t gemini-chat-bot .
+cp template_container.sh container.sh
+vim container.sh
+./container.sh
 ```
 
 ## Config
@@ -37,11 +38,11 @@ Please refer to `template_script.sh` and `template_container.sh`.
 
 | Name | Required | Example |
 | ---- | ---- | ---- |
-| MATTERMOST_URL | yes | http://mattermost.example.com |
+| MATTERMOST_URL | yes | <http://mattermost.example.com> |
 | MATTERMOST_PORT | yes | 8065 |
 | MATTERMOST_API_PATH | yes | /api/v4 |
 | BOT_TOKEN | yes | xxxxxxxx |
-| GEMINI_MODEL | yes | gemini-pro |
+| GEMINI_MODEL | yes | gemini-1.5-flash |
 | GEMINI_API_KEY | yes | yyyyyyyy |
 
 ## Usage
@@ -58,4 +59,4 @@ You do not need to re-mention the bot at this time.
 ## License
 
 MIT License  
-Copyright (c) 2023 Sadao Hiratsuka
+Copyright (c) 2023-2024 Sadao Hiratsuka
