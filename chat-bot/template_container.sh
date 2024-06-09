@@ -13,4 +13,4 @@ podman run \
         --env=GEMINI_MODEL=gemini-1.5-flash \
         --env=GEMINI_API_KEY= \
         --name=gemini-chat-bot \
-        gemini-chat-bot:latest
+        gemini-chat-bot:20240101
