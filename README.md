@@ -56,6 +56,15 @@ You do not need to re-mention the bot at this time.
 
 ![Chat Sample](sample_chat.png)
 
+## Note
+
+There is a bug that does not work with mmpy-bot 2.2.0 and is under investigation.
+Please use mmpy-bot 2.1.4 for the time being.
+
+```bash
+pip install requests[socks] websocket-client google.generativeai 'mmpy-bot<2.2.0'
+```
+
 ## License
 
 MIT License  
